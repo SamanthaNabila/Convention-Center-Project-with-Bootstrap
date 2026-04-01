@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-font: "poppins";
+  --secondary-font: "Roboto";
+  --tertiary-font: "Inter";
+  --tettra-font: "Manrope";
+}
+nav {
+  font-family: var(--primary-font);
+}
+.container {
+  padding: 22px 0;
+}
+.navbar-brand h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.nav-item {
+  font-size: 16px;
+}
