@@ -9,6 +9,12 @@
   --tertiary-font: "Inter";
   --tettra-font: "Manrope";
 }
+body {
+  font-family: var(--primary-font);
+}
+a {
+  text-decoration: none;
+}
 nav {
   font-family: var(--primary-font);
 }
@@ -21,4 +27,78 @@ nav {
 }
 .nav-item {
   font-size: 16px;
+}
+
+/*hero section */
+.hero {
+  position: relative;
+}
+.hero-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-control-next .carousel-control-prev {
+  width: 4rem;
+  height: 3rem;
+}
+.carousel-indicators {
+  bottom: 10px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 68px;
+  height: 4px;
+  border-radius: 10px;
+}
+.hero-content {
+  position: absolute;
+  z-index: 3;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+.hero-title h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.hero-description p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.book-now {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+}
+.book-now a {
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar-brand h1 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .hero-title h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .book-now {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+  }
+  .book-now a {
+    font-weight: 700;
+    font-size: 14px;
+  }
 }
