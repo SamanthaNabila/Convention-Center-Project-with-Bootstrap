@@ -8,6 +8,7 @@
   --secondary-font: "Roboto";
   --tertiary-font: "Inter";
   --tettra-font: "Manrope";
+  --primary-color: #848199;
 }
 body {
   font-family: var(--primary-font);
@@ -122,7 +123,7 @@ nav {
   line-height: 28px;
 }
 .mobile-img {
-  visibility: hidden;
+  display: none;
 }
 .mobile-img img {
   height: 10px;
@@ -135,6 +136,79 @@ nav {
 .album-btn span {
   margin-left: 10px;
 }
+
+/*Our Package*/
+.our-package {
+  width: 100%;
+}
+.Package-container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.Package-title h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.our-package-row {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+.card {
+  border: none;
+}
+.card-header {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+.Package-price h1 {
+  font-size: 36px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+.Package-name h2 {
+  font-size: 28px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+.Package-name p {
+  font-size: 15px;
+  color: var(--primary-color);
+}
+.Package-body span {
+  font-size: 15px;
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+
+.svg-class {
+  background: rgb(230, 217, 235);
+  border-radius: 50%;
+}
+.package-button {
+  text-align: center;
+  background: #f496d1;
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+}
+.card-3 {
+  background: #3f87f5;
+  color: #fff;
+  padding: 50px 30px;
+  margin-top: -100px;
+  border-radius: 40px;
+}
+.card-3 p {
+  color: #fff;
+}
+.card-3 .Package-body span {
+  color: #fff;
+}
+.card-3 .package-button {
+  background: #fff;
+}
+
 @media (max-width: 991px) {
   .container {
     padding-left: 20px;
@@ -144,6 +218,7 @@ nav {
     font-size: 14px;
     font-weight: 700;
   }
+  /*hero*/
 
   .hero-title h1 {
     font-size: 24px;
@@ -158,12 +233,16 @@ nav {
     font-weight: 700;
     font-size: 14px;
   }
+
+  /*moment section*/
+
   .moment-container {
     padding: 0 20px;
   }
-  .moment-img img {
-    visibility: hidden;
+  .moment-img {
+    display: none;
   }
+
   .mobile-img img {
     width: 85dvw;
     height: 300px;
@@ -181,5 +260,17 @@ nav {
   }
   .album-btn {
     text-align: center;
+  }
+
+  /*Our Packeg section */
+  .our-package-row {
+    margin-top: 30px;
+  }
+  .card {
+    margin: 30px;
+  }
+  .card-3 {
+    margin-top: 0px;
+    margin: 0 30px;
   }
 }
