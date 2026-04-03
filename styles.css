@@ -96,19 +96,19 @@ nav {
 .book-now a {
   font-weight: 700;
 }
+
+/*Moment section */
 .momenmt {
   width: 100%;
 }
 .moment-container {
-  max-width: 1440px;
+  max-width: 1160px;
   margin: 100px auto;
 }
 .moment-img img {
   width: 100%;
   height: 364px;
 }
-
-/*Moment section */
 .moment-text {
   margin: auto;
   padding: 0 10px;
@@ -142,7 +142,7 @@ nav {
   width: 100%;
 }
 .Package-container {
-  max-width: 1440px;
+  max-width: 1170px;
   margin: auto;
 }
 
@@ -182,17 +182,41 @@ nav {
 }
 
 .svg-class {
-  background: rgb(230, 217, 235);
-  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 5px;
 }
 .package-button {
   background: transparent;
 }
+.option {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 16px;
+}
+.svg-style {
+  background-color: rgb(230, 217, 235);
+
+  height: 20px;
+  width: 20px;
+
+  border-radius: 50%;
+}
+.facilities {
+  margin-left: 10px;
+  font-size: 15px;
+  color: var(--primary-color);
+}
 .package-button button {
   border: none;
   padding: 10px 20px;
-  background: #f496d1;
+  background: #f496d11a;
+
   border-radius: 50px;
+}
+.package-button a {
+  color: #3f87f5;
+  opacity: 1;
 }
 .card-3 {
   background: #3f87f5;
@@ -211,12 +235,19 @@ nav {
 .card-3 .package-button button {
   background: #fff;
 }
+.our-package .card:hover {
+  background: #3f87f5;
+  color: #fff;
+}
+.Package-body:hover {
+  color: #fff;
+}
 /*clients Section*/
 .clients {
   width: 100%;
 }
 .clients-container {
-  max-width: 1440px;
+  max-width: 1160px;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -264,7 +295,7 @@ nav {
   width: 100%;
 }
 .faq-container {
-  max-width: 1440px;
+  max-width: 1122px;
   margin: auto;
   margin-bottom: 10rem;
 }
