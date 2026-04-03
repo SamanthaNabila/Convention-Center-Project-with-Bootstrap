@@ -313,7 +313,6 @@ nav {
 .footer {
   width: 100%;
   background: black;
-  margin-bottom: 20rem;
 }
 .footer-container {
   max-width: 1440px;
@@ -424,6 +423,7 @@ nav {
     margin-top: 0px;
     margin: 0 30px;
   }
+
   .package-button button {
     text-align: center;
     background: #f496d1;
