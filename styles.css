@@ -278,6 +278,28 @@ nav {
 .accordion {
   padding: 30px 0;
 }
+.accordion-button {
+  font-family: var(--tertiary-font);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #383838;
+}
+
+.accordion-header {
+  font-family: var(--tertiary-font);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #383838;
+}
+.accordion-body p {
+  font-family: var(--tertiary-font);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #383838;
+}
 .faq-img {
   padding: 30px 0;
 }
@@ -285,6 +307,44 @@ nav {
   width: 546px;
   height: 364px;
   border-radius: 5px;
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  background: black;
+  margin-bottom: 20rem;
+}
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+}
+.copyright {
+  margin: auto;
+}
+.copyright p {
+  color: #fff;
+  margin: auto;
+  opacity: 0.66;
+}
+.footer-row {
+  padding: 70px;
+}
+.apps h1 {
+  font-family: var(--tettra-font);
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.66;
+}
+.apple svg {
+  margin-bottom: 20px;
+}
+.android svg {
+  margin-bottom: 20px;
+}
+.app-store {
+  justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -393,9 +453,18 @@ nav {
   }
   .faq-container {
     padding: 20px;
+    margin-bottom: 30px;
   }
   .faq-img img {
     width: 324px;
     height: 301px;
+  }
+
+  .copyright {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .apps h1 {
+    margin-bottom: 20px;
   }
 }
