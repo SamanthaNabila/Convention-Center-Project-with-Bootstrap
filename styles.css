@@ -208,7 +208,81 @@ nav {
 .card-3 .package-button {
   background: #fff;
 }
+/*clients Section*/
+.clients {
+  width: 100%;
+}
+.clients-container {
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.client-title {
+  margin-bottom: 6.5rem;
+}
+.client-title h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.client-row .card {
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.client-comment {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c6c6c;
+  margin-bottom: 20px;
+}
 
+.client-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.client-details {
+  margin-top: 20px;
+}
+.client-details h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.client-details p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #747474;
+  margin-bottom: 0px;
+}
+/*faq section */
+.faq {
+  width: 100%;
+}
+.faq-container {
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+.faq-titel {
+  margin: 9rem auto 7rem;
+}
+.faq-titel h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.accordion {
+  padding: 30px 0;
+}
+.faq-img {
+  padding: 30px 0;
+}
+.faq-img img {
+  width: 546px;
+  height: 364px;
+  border-radius: 5px;
+}
 @media (max-width: 991px) {
   .container {
     padding-left: 20px;
@@ -263,8 +337,10 @@ nav {
   }
 
   /*Our Packeg section */
+
   .our-package-row {
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   .card {
     margin: 30px;
@@ -272,5 +348,18 @@ nav {
   .card-3 {
     margin-top: 0px;
     margin: 0 30px;
+  }
+  button {
+    width: 200px;
+  }
+
+  /*client section */
+  .client-title {
+    margin-bottom: 10px;
+  }
+  .client-title h1 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #222221;
   }
 }
