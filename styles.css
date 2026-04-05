@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 :root {
   --primary-font: "poppins";
@@ -10,11 +11,16 @@
   --tettra-font: "Manrope";
   --primary-color: #848199;
 }
+
 body {
   font-family: var(--primary-font);
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
+}
+li {
+  list-style: none;
 }
 .floating-btn {
   position: fixed;
@@ -32,7 +38,7 @@ nav {
 }
 .container {
   padding: 22px 0;
-  max-width: 1440px;
+
   margin: 0 auto;
 }
 .navbar-brand h1 {
@@ -141,6 +147,85 @@ nav {
 .our-package {
   width: 100%;
 }
+.Package-text {
+  margin-left: 10px;
+}
+ul {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.pricing-card {
+  border-radius: 20px;
+  transition: transform 0.3s;
+  padding: 2rem 1rem;
+  width: 100%;
+  /* margin: 10px 20px; */
+}
+
+.btn-outline-primary-custom {
+  background-color: #fff0f5;
+  color: #4e73df;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+.alert-custom {
+  border-left: 8px solid #4e73df;
+  top: 35%;
+  left: 66%;
+  z-index: 100;
+  border-radius: 4px;
+  white-space: normal;
+}
+
+.review-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.fa-circle-check {
+  color: #5243c2;
+  opacity: 0.5;
+}
+.text-decoration {
+  color: #848199;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.pricing-card:hover {
+  background-color: #4e73df;
+  color: #ffffff;
+  transform: translateY(-50px);
+  box-shadow: 0 20px 20px rgba(57, 100, 241, 0.336);
+}
+
+.pricing-card:hover p.text-decoration,
+.pricing-card:hover ul li.text-decoration,
+.pricing-card:hover ul li i.fa-circle-check {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.btn-outline-primary-custom:hover {
+  background-color: #ffffff;
+  color: #4e73df;
+  border: none;
+}
+
+.download {
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+
+/* twzt */
+.our-package {
+  width: 100%;
+  padding: 20px;
+}
 .Package-container {
   max-width: 1170px;
   margin: auto;
@@ -149,6 +234,7 @@ nav {
 .Package-title h1 {
   font-size: 38px;
   font-weight: 600;
+  margin-bottom: 9rem;
 }
 .our-package-row {
   margin-top: 12rem;
@@ -157,37 +243,12 @@ nav {
 .card {
   border: none;
 }
-.card-header {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-}
-.Package-price h1 {
-  font-size: 36px;
-  font-family: var(--secondary-font);
-  font-weight: 700;
-}
-.Package-name h2 {
-  font-size: 28px;
-  font-family: var(--secondary-font);
-  font-weight: 700;
-}
-.Package-name p {
-  font-size: 15px;
-  color: var(--primary-color);
-}
-.Package-body span {
-  font-size: 15px;
-  color: var(--primary-color);
-  margin-left: 5px;
-}
 
 .svg-class {
   text-align: center;
   margin-bottom: 5px;
 }
-.package-button {
-  background: transparent;
-}
+
 .option {
   display: flex;
 
@@ -202,45 +263,12 @@ nav {
 
   border-radius: 50%;
 }
-.facilities {
-  margin-left: 10px;
-  font-size: 15px;
-  color: var(--primary-color);
-}
-.package-button button {
-  border: none;
-  padding: 10px 20px;
-  background: #f496d11a;
-
-  border-radius: 50px;
-}
-.package-button a {
-  color: #3f87f5;
-  opacity: 1;
-}
-.card-3 {
-  background: #3f87f5;
-  color: #fff;
-  padding: 50px 30px;
-  margin-top: -100px;
-  border-radius: 40px;
-}
-.card-3 p {
-  color: #fff;
-}
-.card-3 .Package-body span {
-  color: #fff;
-}
-
-.card-3 .package-button button {
-  background: #fff;
-}
-.our-package .card:hover {
-  background: #3f87f5;
-  color: #fff;
-}
-.Package-body:hover {
-  color: #fff;
+.pricing-card {
+  border-radius: 20px;
+  transition: transform 0.3s;
+  padding: 2rem 1rem;
+  width: 90%;
+  /* margin: 10px 20px; */
 }
 /*clients Section*/
 .clients {
@@ -258,6 +286,7 @@ nav {
   font-size: 38px;
   font-weight: 600;
 }
+
 .client-row .card {
   background: #fff;
   border-radius: 5px;
@@ -284,6 +313,7 @@ nav {
   font-size: 14px;
   font-weight: 600;
 }
+
 .client-details p {
   font-size: 14px;
   font-weight: 600;
@@ -330,13 +360,14 @@ nav {
   line-height: 28px;
   font-weight: 400;
   color: #383838;
+  text-align: left;
 }
 .faq-img {
   padding: 30px 0;
 }
 .faq-img img {
-  width: 546px;
-  height: 364px;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -378,10 +409,14 @@ nav {
 }
 
 @media (max-width: 991px) {
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   .floating-btn {
     position: fixed;
     bottom: 30rem;
-    right: -4px;
+    right: 0px;
     z-index: 999;
     background: transparent;
 
@@ -412,7 +447,10 @@ nav {
     font-weight: 700;
     font-size: 14px;
   }
-
+  .faq-img img {
+    max-width: 100%;
+    height: auto;
+  }
   /*moment section*/
 
   .moment-container {
@@ -421,9 +459,18 @@ nav {
   .moment-img {
     display: none;
   }
-
+  .momemt-title h1 {
+    font-size: 19px;
+    font-weight: 700;
+  }
+  .moment-description p {
+    font-weight: 700;
+    color: #6c6c6c;
+    line-height: 28px;
+    font-size: 15px;
+  }
   .mobile-img img {
-    width: 85dvw;
+    width: 100%;
     height: 300px;
   }
   .mobile-img {
@@ -447,9 +494,7 @@ nav {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .card {
-    margin: 30px;
-  }
+
   .card-3 {
     margin-top: 0px;
     margin: 0 30px;
@@ -471,6 +516,9 @@ nav {
     font-size: 19px;
     font-weight: 600;
     color: #222221;
+  }
+  .client-row .col-md-4 .card {
+    margin-bottom: 30px;
   }
 
   /*faq Section */
@@ -497,5 +545,14 @@ nav {
   }
   .apps h1 {
     margin-bottom: 20px;
+  }
+  .alert-custom {
+    top: -5%;
+    left: 55%;
+    transform: translateX(-50%);
+  }
+
+  .pricing-card:hover {
+    transform: translateY(0);
   }
 }
