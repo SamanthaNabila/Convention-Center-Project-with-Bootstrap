@@ -172,12 +172,20 @@ nav {
   padding: 10px 24px;
 }
 .album-btn .btn:hover {
-  opacity: 0.8;
+  background: #fff;
+  color: #3f87f5;
 }
 .album-btn span {
   margin-left: 10px;
 }
+.btn svg path {
+  fill: white;
+  transition: 0.3s;
+}
 
+.btn:hover svg path {
+  fill: #3f87f5;
+}
 /*Our Package*/
 
 .Package-text {
@@ -238,7 +246,7 @@ ul {
   fill: #ffffff !important;
 }
 .pricing-card:hover .svg-style {
-  background-color: #fff1a;
+  background-color: #fff 1a;
 }
 
 .btn-outline-primary-custom:hover {
