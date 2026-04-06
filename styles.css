@@ -144,9 +144,7 @@ nav {
 }
 
 /*Our Package*/
-.our-package {
-  width: 100%;
-}
+
 .Package-text {
   margin-left: 10px;
 }
@@ -180,16 +178,6 @@ ul {
   white-space: normal;
 }
 
-.review-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.fa-circle-check {
-  color: #5243c2;
-  opacity: 0.5;
-}
 .text-decoration {
   color: #848199;
   font-size: 15px;
@@ -198,16 +186,22 @@ ul {
 }
 .pricing-card:hover {
   background-color: #4e73df;
-  color: #ffffff;
+  /* color: #ffffff; */
   transform: translateY(-50px);
   box-shadow: 0 20px 20px rgba(57, 100, 241, 0.336);
 }
 
 .pricing-card:hover p.text-decoration,
 .pricing-card:hover ul li.text-decoration,
-.pricing-card:hover ul li i.fa-circle-check {
+.pricing-card:hover ul li .text-decoration .option .svg-style svg {
   color: #ffffff !important;
   opacity: 1 !important;
+}
+.pricing-card:hover svg path {
+  fill: #ffffff !important;
+}
+.pricing-card:hover .svg-style {
+  background-color: #fff1a;
 }
 
 .btn-outline-primary-custom:hover {
@@ -216,12 +210,6 @@ ul {
   border: none;
 }
 
-.download {
-  font-size: 0.75rem;
-  color: #ffffff;
-}
-
-/* twzt */
 .our-package {
   width: 100%;
   padding: 20px;
@@ -263,13 +251,7 @@ ul {
 
   border-radius: 50%;
 }
-.pricing-card {
-  border-radius: 20px;
-  transition: transform 0.3s;
-  padding: 2rem 1rem;
-  width: 90%;
-  /* margin: 10px 20px; */
-}
+
 /*clients Section*/
 .clients {
   width: 100%;
