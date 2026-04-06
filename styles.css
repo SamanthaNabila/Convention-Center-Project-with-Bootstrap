@@ -2,14 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 :root {
-  --primary-font: "poppins";
-  --secondary-font: "Roboto";
-  --tertiary-font: "Inter";
+  --primary-font: "poppins", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --tertiary-font: "Inter", sans-serif;
   --tettra-font: "Manrope";
   --primary-color: #848199;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 body {
@@ -47,6 +50,10 @@ nav {
 }
 .nav-item {
   font-size: 16px;
+  color: #3e3e3e;
+}
+.nav-link:hover {
+  color: #3f87f5;
 }
 
 /*hero section */
@@ -59,21 +66,32 @@ nav {
   margin: 0 auto;
 }
 .hero-slide {
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
 }
-.carousel-control-next .carousel-control-prev {
-  width: 4rem;
-  height: 3rem;
+.carousel-control-next,
+.carousel-control-prev {
+  top: 112px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 70px;
+  height: 54px;
 }
 .carousel-indicators {
-  bottom: 10px;
+  bottom: 0px;
 }
 .carousel-indicators [data-bs-target] {
   width: 68px;
-  height: 4px;
+  height: 5px;
   border-radius: 10px;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
 }
 .hero-content {
   position: absolute;
@@ -84,8 +102,10 @@ nav {
   z-index: 10;
   color: #fff;
   padding-top: 90px;
-  padding-bottom: 60px;
+
+  width: 639px;
 }
+
 .hero-title h1 {
   font-size: 48px;
   font-weight: 600;
@@ -138,7 +158,13 @@ nav {
 
 .album-btn .btn {
   border-radius: 0;
+  background: #3f87f5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 24px;
 }
+
 .album-btn span {
   margin-left: 10px;
 }
@@ -186,16 +212,17 @@ ul {
 }
 .pricing-card:hover {
   background-color: #4e73df;
-  /* color: #ffffff; */
+
   transform: translateY(-50px);
   box-shadow: 0 20px 20px rgba(57, 100, 241, 0.336);
 }
-
+.pricing-card:hover .card-price,
 .pricing-card:hover p.text-decoration,
 .pricing-card:hover ul li.text-decoration,
 .pricing-card:hover ul li .text-decoration .option .svg-style svg {
   color: #ffffff !important;
   opacity: 1 !important;
+  transform: translateY(-10px);
 }
 .pricing-card:hover svg path {
   fill: #ffffff !important;
@@ -209,7 +236,6 @@ ul {
   color: #4e73df;
   border: none;
 }
-
 .our-package {
   width: 100%;
   padding: 20px;
@@ -268,6 +294,9 @@ ul {
   font-size: 38px;
   font-weight: 600;
 }
+.client-row .col-md-4 {
+  padding: 1.5rem;
+}
 
 .client-row .card {
   background: #fff;
@@ -318,6 +347,10 @@ ul {
   font-size: 38px;
   font-weight: 600;
 }
+.faq .row {
+  align-items: center;
+  justify-content: center;
+}
 .accordion {
   padding: 30px 0;
 }
@@ -336,12 +369,18 @@ ul {
   font-weight: 500;
   color: #383838;
 }
+.accordion-button:not(.collapsed) {
+  color: #383838;
+}
+.accordion-button::after {
+  filter: brightness(0);
+}
 .accordion-body p {
   font-family: var(--tertiary-font);
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  color: #383838;
+  color: #7e848c;
   text-align: left;
 }
 .faq-img {
@@ -359,35 +398,41 @@ ul {
   background: black;
 }
 .footer-container {
-  max-width: 1440px;
+  max-width: 1122px;
   margin: auto;
 }
-.copyright {
-  margin: auto;
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 84px;
 }
-.copyright p {
+.footer-left {
   color: #fff;
-  margin: auto;
   opacity: 0.66;
 }
-.footer-row {
-  padding: 70px;
+.footer-right {
+  width: 160px;
+  min-height: 140px;
 }
-.apps h1 {
+.footer-right h1 {
   font-family: var(--tettra-font);
   font-size: 18px;
   font-weight: 500;
   color: #fff;
   opacity: 0.66;
 }
+
+.footer-row {
+  padding: 70px;
+}
+
 .apple svg {
   margin-bottom: 20px;
 }
 .android svg {
   margin-bottom: 20px;
-}
-.app-store {
-  justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -415,6 +460,9 @@ ul {
     font-weight: 700;
   }
   /*hero*/
+  .hero-content {
+    width: 320px;
+  }
 
   .hero-title h1 {
     font-size: 24px;
@@ -524,12 +572,38 @@ ul {
     max-width: 100%;
     height: auto;
   }
+  .accordion-button {
+    font-family: var(--tertiary-font);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #383838;
+  }
+  /* .accordion-header {
+    font-family: var(--tertiary-font);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #383838;
+  } */
 
-  .copyright {
-    margin-top: 40px;
-    margin-bottom: 0px;
+  .accordion-body p {
+    font-family: var(--tertiary-font);
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #7e848c;
+    text-align: left;
   }
-  .apps h1 {
-    margin-bottom: 20px;
+
+  .footer-main {
+    flex-direction: column-reverse;
+   
   }
-}
+  .footer-right {
+    margin-bottom: 30px;
+  }
+  .footer-left p{
+    font-size: 14px;
+    font-weight: 400;
+  }
