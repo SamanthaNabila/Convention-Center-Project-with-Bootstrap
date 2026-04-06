@@ -113,11 +113,11 @@ nav {
 }
 .moment-img img {
   width: 100%;
-  height: 364px;
+  border-radius: 5px;
 }
 .moment-text {
   margin: auto;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 .momemt-title h1 {
   font-size: 38px;
@@ -447,14 +447,12 @@ ul {
     font-weight: 700;
     font-size: 14px;
   }
-  .faq-img img {
-    max-width: 100%;
-    height: auto;
-  }
+
   /*moment section*/
 
   .moment-container {
     padding: 0 20px;
+    margin-bottom: 50px;
   }
   .moment-img {
     display: none;
@@ -472,6 +470,7 @@ ul {
   .mobile-img img {
     width: 100%;
     height: 300px;
+    border-radius: 5px;
   }
   .mobile-img {
     visibility: visible;
@@ -494,18 +493,16 @@ ul {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-
-  .card-3 {
-    margin-top: 0px;
-    margin: 0 30px;
+  .Package-title h1 {
+    margin-bottom: 3rem;
   }
 
-  .package-button button {
-    text-align: center;
-    background: #f496d1;
-    border-radius: 50px;
-    padding: 10px;
-    border: none;
+  .alert-custom {
+    transform: translateX(-50%);
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-10px);
   }
 
   /*client section */
@@ -519,6 +516,9 @@ ul {
   }
   .client-row .col-md-4 .card {
     margin-bottom: 30px;
+  }
+  .col-md-4 {
+    padding: 30px;
   }
 
   /*faq Section */
@@ -534,9 +534,13 @@ ul {
     padding: 20px;
     margin-bottom: 30px;
   }
-  .faq-img img {
+  /* .faq-img img {
     width: 324px;
     height: 301px;
+  } */
+  .faq-img img {
+    max-width: 100%;
+    height: auto;
   }
 
   .copyright {
@@ -545,14 +549,5 @@ ul {
   }
   .apps h1 {
     margin-bottom: 20px;
-  }
-  .alert-custom {
-    top: -5%;
-    left: 55%;
-    transform: translateX(-50%);
-  }
-
-  .pricing-card:hover {
-    transform: translateY(0);
   }
 }
