@@ -48,7 +48,7 @@ nav {
   font-size: 22px;
   font-weight: 700;
 }
-.nav-item {
+.nav-link {
   font-size: 16px;
   color: #3e3e3e;
 }
@@ -65,19 +65,22 @@ nav {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .hero-slide {
-  height: 90vh;
+  height: 690px;
   background-size: cover;
   background-position: center;
 }
 .carousel-control-next,
 .carousel-control-prev {
-  top: 83px;
+  top: 60px;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  width: 70px;
+  width: 32px;
   height: 54px;
+  transform: scale(3);
+  color: #9b9b9b;
 }
 .carousel-indicators {
   bottom: 0px;
@@ -118,9 +121,13 @@ nav {
   padding: 10px 50px;
   border: none;
   border-radius: 5px;
-}
-.book-now a {
   font-weight: 700;
+  color: #3f87f5;
+}
+
+.book-now:hover {
+  background: #3f87f5;
+  color: #fff;
 }
 
 /*Moment section */
@@ -164,7 +171,9 @@ nav {
   font-weight: 700;
   padding: 10px 24px;
 }
-
+.album-btn .btn:hover {
+  opacity: 0.8;
+}
 .album-btn span {
   margin-left: 10px;
 }
@@ -180,10 +189,11 @@ ul {
 }
 .pricing-card {
   border-radius: 20px;
-  transition: transform 0.3s;
+  transition:
+    transform 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
   padding: 2rem 1rem;
   width: 100%;
-  /* margin: 10px 20px; */
 }
 
 .btn-outline-primary-custom {
@@ -305,11 +315,13 @@ ul {
   box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.08);
   cursor: pointer;
 }
-.client-comment {
+.client-comment p {
   font-size: 16px;
   font-weight: 400;
   color: #6c6c6c;
   margin-bottom: 20px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
 }
 
 .client-img img {
@@ -323,6 +335,8 @@ ul {
 .client-details h2 {
   font-size: 14px;
   font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 .client-details p {
@@ -477,6 +491,17 @@ ul {
     font-weight: 700;
     font-size: 14px;
   }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 30px;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 23px;
+    height: 40px;
+    transform: scale(2);
+    color: #9b9b9b;
+  }
 
   /*moment section*/
 
@@ -598,12 +623,12 @@ ul {
 
   .footer-main {
     flex-direction: column-reverse;
-   
   }
   .footer-right {
     margin-bottom: 30px;
   }
-  .footer-left p{
+  .footer-left p {
     font-size: 14px;
     font-weight: 400;
   }
+}
